@@ -1,0 +1,85 @@
+@font-face {
+   font-family: 'Heebo';
+   src: url('./fonts/Heebo-Light.woff2') format('woff2');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+ }
+ 
+ @font-face {
+   font-family: 'Heebo';
+   src: url('./fonts/Heebo-Bold.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+ }
+ 
+ @font-face {
+   font-family: 'Yantramanav';
+   src: url('./fonts/Yantramanav-Bold.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+ }
+
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+   padding-left: 0;
+ }
+
+ body,
+ :where(blockquote, figure):where([class]) {
+   margin: 0;
+ }
+
+ :where(
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   ul,
+   ol,
+   dl
+ ):where([class]) {
+   margin-block: 0;
+ }
+ 
+ :where(dd[class]) {
+   margin-left: 0;
+ }
+
+ :where(ul[class]) {
+   list-style: none;
+ }
+
+ 
+ .imgM {
+   display: block;
+   max-width: 25%;
+   margin-left: 250px;
+   position: relative;
+   top: -100px;
+ }
+
+ img {
+   display: block;
+   max-width: 100%;
+   .imgM {
+     display: block;
+     max-width: 25%;
+     margin-left: 250px;
+     position: relative;
+     top: -100px;
+   }
+ }
+
+ 
+
